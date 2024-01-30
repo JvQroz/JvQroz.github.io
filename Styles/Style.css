@@ -221,7 +221,7 @@ header > .interface{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 60px;
 }
 .checkbox {
     opacity: 0;
@@ -370,6 +370,9 @@ footer{
     }
     .projetos{
         flex-direction: column;
+    }
+    .lightmode{
+        margin-right: 25px;
     }
 }
  ::-webkit-scrollbar{
