@@ -221,7 +221,7 @@ header > .interface{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .checkbox {
     opacity: 0;
