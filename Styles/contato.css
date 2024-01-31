@@ -1,6 +1,5 @@
 .contatos{
     height: 100vh;
-    box-shadow: 0px 0px 15px #FF0000;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -8,10 +7,7 @@
     gap: 100px;
 
 }
-.corpo.light .contatos{
-    box-shadow: none;
-    border: 2px solid #FF0000;
-}
+
 .contatos-conteudo{
     display: flex;
     justify-content: space-around;
@@ -20,8 +16,9 @@
 }
 
 .contatos h1{
-    color: #bfbfbf;
     font-size: 40px;
+    color: #bfbfbf;
+
 }
 .corpo.light .contatos h1{
     color: black;
