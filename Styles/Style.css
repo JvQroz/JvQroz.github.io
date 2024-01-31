@@ -14,6 +14,7 @@ html{
 /*   MENU DE NAVEGAÇÃO   */
 header{
     padding: 40px 4%;
+    border-bottom: 2px solid red;
 }
 .interface{
     max-width: 1280px;
@@ -24,6 +25,7 @@ header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .corpo.light header{
     background-color: #bfbfbf;
@@ -75,7 +77,7 @@ header > .interface{
     transition: 0.2s;
 }
 .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #FF0000;
+    box-shadow: 0px 0px 15px #FF0000;
     transform: scale(1.10);
 }
 
@@ -128,7 +130,7 @@ header > .interface{
     border-radius: 100%;
     background-color: #FF0000;
     width: 200px;
-    box-shadow: 0px 0px 50px #FF0000;
+    box-shadow: 0px 0px 100px #FF0000;
 }
 .social{
     color: white;
@@ -269,17 +271,14 @@ header > .interface{
     color: #f39c12;
 }
 #portfolio{
-    box-shadow: 0px 0px 15px #FF0000;
+    border-top: 2px solid red;
     gap: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0px;
 }
-.corpo.light #portfolio{
-    box-shadow: none;
-    border: 2px solid #FF0000;
-}
+
 #portfolio h2{
     text-align: center;
     color: #bfbfbf;
@@ -301,17 +300,20 @@ header > .interface{
     
 
 }
- .projeto{
+ .projeto1, .projeto2, .projeto3, .projeto4{
     border: 2px solid #FF0000;
     text-align: center;
     width: 250px;
     height: 400px;
     padding: 20px 0px;
     background-size: cover;
-    background-image: url(/Image/sim.jpg);
     background-position: 100% 0%;
     transition: 5s;
     position: relative;
+ }
+
+ .projeto1{
+    background-image: url(/Image/projeto1.png);
  }
 
  .overlay{
@@ -341,6 +343,7 @@ header > .interface{
 
 footer{
     padding: 40px 4%;
+    border-top: 2px solid #FF0000;
 }
 .corpo.light footer{
     background-color: #bfbfbf;
