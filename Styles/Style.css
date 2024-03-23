@@ -312,10 +312,6 @@ header > .interface{
     position: relative;
  }
 
- .projeto1{
-    background-image: url(/Image/projeto1.png);
- }
-
  .overlay{
     background-color: #000000ad;
     position: absolute;
