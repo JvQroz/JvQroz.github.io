@@ -277,6 +277,7 @@ header > .interface{
     flex-direction: column;
     align-items: center;
     padding: 100px 0px;
+    
 }
 
 #portfolio h2{
@@ -285,22 +286,24 @@ header > .interface{
     font-size: 30px;
     font-weight: 400;
 }
+
 .corpo.light #portfolio h2{
     color: #000000;
 }
+
 #portfolio h2 span{
     color: #FF0000;
 }
+
 .projetos{
     display: flex;
     justify-content: center;
     color: #bfbfbf;
     flex-wrap: wrap;
-    gap: 90px;
-    
-
+    gap: 90px;  
 }
- .projeto1, .projeto2, .projeto3, .projeto4{
+
+ .projeto{
     border: 2px solid #FF0000;
     text-align: center;
     width: 250px;
@@ -324,10 +327,15 @@ header > .interface{
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #bfbfbf;
+    color: #FF0000;
     opacity: 0;
     transition: 0.5s;
  }
+ 
+ .overlay p{
+    color: #bfbfbf;
+ }
+
  .overlay:hover{
     opacity: 1;
     box-shadow: 0px 0px 25px #FF0000;
