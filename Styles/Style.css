@@ -94,6 +94,7 @@ header > .interface{
 #inicio{
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid red;
 }
 .conteudo-inicio{
     width: 1000px;
