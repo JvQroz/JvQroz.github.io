@@ -66,7 +66,6 @@ header > .interface{
 }
 
 .btn-contato button{
-
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -369,7 +368,6 @@ footer{
     #inicio img{
         display: none;
     }
-
     .nav-list{
         display: none;
     }
@@ -387,6 +385,12 @@ footer{
     .lightmode{
         margin-right: 25px;
     }
+    .btn-contato button{
+        padding: 10px 20px;
+    }
+    .logo h1{
+        font-size: 30px
+    } 
 }
  ::-webkit-scrollbar{
     width: 5px;
