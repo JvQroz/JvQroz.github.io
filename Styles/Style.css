@@ -34,13 +34,6 @@ header>.interface {
     background-color: #bfbfbf;
 }
 
-.nav {
-    max-width: 1280px;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo h1 {
     font-size: 40px;
@@ -131,7 +124,6 @@ header>.interface {
 }
 
 #inicio img {
-    filter: grayscale(100%);
     width: 50px;
     transition: 0.2s;
 }
@@ -147,7 +139,7 @@ header>.interface {
     align-items: center;
 }
 
-#especialidades {
+#tecnologias {
     gap: 90px;
     display: flex;
     flex-direction: column;
@@ -155,18 +147,18 @@ header>.interface {
     padding: 100px 0px;
 }
 
-#especialidades h2 {
+#tecnologias h2 {
     text-align: center;
     color: #bfbfbf;
     font-size: 30px;
     font-weight: 400;
 }
 
-.corpo.light #especialidades h2 {
+.corpo.light #tecnologias h2 {
     color: #000000;
 }
 
-#especialidades h2 span {
+#tecnologias h2 span {
     color: #ff0000;
 }
 
