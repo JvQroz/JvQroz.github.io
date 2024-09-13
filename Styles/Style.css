@@ -251,7 +251,7 @@ header>.interface {
 .caixa-especialidades p {
     display: flex;
     margin: 20px;
-    text-align: justify;
+    text-align: center;
     margin-top: 20px;
     font-size: 18px;
     font-weight: 500;
