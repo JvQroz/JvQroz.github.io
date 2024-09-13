@@ -13,7 +13,7 @@
     --primary-color2: #000000;
     --secondary-color: #ff0000;
     --secondary-color2: #b22222;
-    --background-color: #111217;
+    --background-color: #0F0F0F;
     --background-color2: #bfbfbf;
 }
 
@@ -45,20 +45,19 @@ header>.interface {
 
 .logo h1 {
     font-size: 40px;
-    color: var(--secondary-color);
-    font-weight: 900;
+    color: var(--primary-color);
     margin-right: 10px;
 }
 
 .logo h1 span{
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .corpo.light .logo h1{
-    color: var(--secondary-color2);
+    color: var(--primary-color2);
 }
 
 .corpo.light .logo h1 span{
-    color: var(--primary-color2);
+    color: var(--secondary-color2);
 }
 
 .nav-list {
