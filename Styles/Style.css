@@ -40,10 +40,8 @@ header>.interface {
 }
 
 .corpo.light header {
-    background-color: var(--background-color2);
     border-bottom: 2px solid var(--secondary-color2);
 }
-
 
 .logo h1 {
     font-size: 40px;
@@ -76,6 +74,7 @@ header>.interface {
 
 .nav-list a:hover {
     color: var(--secondary-color);
+    font-weight: bold;
     transform: scale(1.10);
 }
 
@@ -112,6 +111,9 @@ header>.interface {
 }
 
 .inicio-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--primary-color);
 
 }
@@ -121,8 +123,36 @@ header>.interface {
 }
 
 .inicio-txt h1 {
-    font-size: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: mark .5s step-end infinite, write 8s steps(22,end) infinite;
+    width: 0;
+    border-right: 16px solid var(--secondary-color);
+    font-size: 45px;
     font-weight: 100;
+}
+
+.corpo.light .inicio-txt h1{
+    border-right: 16px solid var(--secondary-color2);
+}
+@keyframes mark{
+    50%{
+        border-right-color: transparent;
+    }
+}
+@keyframes write{
+    20%{
+        width: 14.1ch;
+    }
+    70%{
+        width: 14.1ch;
+    }
+    85%{
+        width: 0;
+    }
+    100%{
+        width: 0;
+    }
 }
 
 .inicio-txt h1 span {
