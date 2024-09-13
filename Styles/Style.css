@@ -129,55 +129,50 @@ header>.interface {
 }
 
 .inicio-txt h1 {
+    text-shadow: var(--primary-color) 0px 0px 10px;
     overflow: hidden;
     white-space: nowrap;
-    text-shadow: 0 0 5px var(--primary-color);
-    animation: write 8s steps(22,end) infinite;
+    animation: mark .5s step-end infinite, write 8s steps(22,end) infinite;
     width: 0;
+    border-right: 16px solid var(--secondary-color);
     font-size: 45px;
     font-weight: 100;
-    position: relative;
-}
-.inicio-txt h1::after {
-    position: absolute;
-    opacity: 1;
-    animation: .5s ease 0s infinite normal none mark;
-    text-shadow: 0 0 5px var(--primary-color);
-    right: 0px;
-    top: 0;
-    content: '|';
 }
 
 @keyframes mark{
-    50% {
-        opacity: 0;
+    50%{
+        border-right-color: transparent;
     }
 }
 @keyframes write{
     20%{
-        width: 14.5ch; /* Aumente este valor para expandir a área visível */
+        width: 14.1ch;
     }
     70%{
-        width: 14.5ch; /* Aumente este valor conforme necessário */
+        width: 14.1ch;
     }
     85%{
-        width: 0; /* Aumente este valor conforme necessário */
+        width: 0;
     }
     100%{
-        width: 0; /* Aumente este valor conforme necessário */
+        width: 0;
     }
+}
+
+.inicio-txt h1 span {
+    color: var(--secondary-color);
+    text-shadow: var(--secondary-color) 0px 0px 10px;
+    
 }
 
 .corpo.light .inicio-txt h1{
     border-right: 16px solid var(--secondary-color2);
-}
-.inicio-txt h1 span {
-    color: var(--secondary-color);
-    text-shadow: 0 0 8px var(--secondary-color);
+    text-shadow: var(--primary-color2) 0px 0px 10px;
 }
 
 .corpo.light .inicio-txt h1 span{
     color: var(--secondary-color2);
+    text-shadow: var(--secondary-color2) 0px 0px 10px;
 }
 
 .inicio-txt p {
