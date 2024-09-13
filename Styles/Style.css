@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #bfbfbf;
+    --primary-color2: #000000;
+    --secondary-color: #ff0000;
+    --secondary-color2: #b22222;
+    --background-color: #111217;
+    --background-color2: #bfbfbf;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +24,7 @@ html {
 /*   MENU DE NAVEGAÇÃO   */
 header {
     padding: 40px 4%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .interface {
@@ -31,15 +40,20 @@ header>.interface {
 }
 
 .corpo.light header {
-    background-color: #bfbfbf;
+    background-color: var(--background-color2);
+    border-bottom: 2px solid var(--secondary-color2);
 }
 
 
 .logo h1 {
     font-size: 40px;
-    color: #FF0000;
+    color: var(--secondary-color);
     font-weight: 900;
     margin-right: 10px;
+}
+
+.corpo.light .logo h1{
+    color: var(--secondary-color2);
 }
 
 .nav-list {
@@ -50,18 +64,18 @@ header>.interface {
 
 .nav-list a {
     font-size: 18px;
-    color: #bfbfbf;
+    color: var(--primary-color);
     padding-block: 16px;
     display: inline-block;
     transition: .2s;
 }
 
 .corpo.light .nav-list a {
-    color: #000000;
+    color: var(--primary-color2);
 }
 
 .nav-list a:hover {
-    color: #FF0000;
+    color: var(--secondary-color);
     transform: scale(1.10);
 }
 
@@ -70,7 +84,7 @@ header>.interface {
     width: 100%;
     height: 100vh;
     background: center / cover no-repeat;
-    background-color: #111217;
+    background-color: var(--background-color);
 }
 
 .corpo.light {
@@ -80,7 +94,11 @@ header>.interface {
 #inicio {
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.corpo.light #inicio{
+    border-bottom: 2px solid var(--secondary-color2);
 }
 
 .conteudo-inicio {
@@ -94,12 +112,12 @@ header>.interface {
 }
 
 .inicio-txt {
-    color: #bfbfbf;
+    color: var(--primary-color);
 
 }
 
 .corpo.light .inicio-txt {
-    color: #000000;
+    color: var(--primary-color2);
 }
 
 .inicio-txt h1 {
@@ -108,19 +126,15 @@ header>.interface {
 }
 
 .inicio-txt h1 span {
-    color: #FF0000;
+    color: var(--secondary-color);
+}
+
+.corpo.light .inicio-txt h1 span{
+    color: var(--secondary-color2);
 }
 
 .inicio-txt p {
     padding: 15px 0px;
-}
-
-.inicio-txt p b {
-    color: #e0e0e0;
-}
-
-.corpo.light .inicio-txt p b {
-    color: #000000;
 }
 
 #inicio img {
@@ -155,26 +169,28 @@ header>.interface {
 }
 
 .corpo.light #tecnologias h2 {
-    color: #000000;
+    color: var(--primary-color2);
 }
 
 #tecnologias h2 span {
-    color: #ff0000;
+    color: var(--secondary-color);
+}
+
+.corpo.light #tecnologias h2 span {
+    color: var(--secondary-color2);
 }
 
 .caixas-especialidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #bfbfbf;
+    color: var(--primary-color);
     gap: 50px;
-
-
 }
 
 .caixa-especialidades {
     text-align: center;
-    border: 2px solid #bfbfbf;
+    border: 2px solid var(--primary-color);
     border-radius: 20px;
     width: 300px;
     height: 380px;
@@ -183,17 +199,17 @@ header>.interface {
 }
 
 .corpo.light .caixa-especialidades {
-    color: #000000;
-    border: 2px solid #000000;
+    color: var(--primary-color2);
+    border: 2px solid var(--primary-color2);
 }
 
 .caixa-especialidades:hover {
     transform: scale(1.10);
-    box-shadow: 0px 0px 25px #bfbfbf;
+    box-shadow: 0px 0px 25px var(--primary-color);
 }
 
 .corpo.light .caixa-especialidades:hover {
-    box-shadow: 0px 0px 25px #000000;
+    box-shadow: 0px 0px 25px var(--primary-color2);
 }
 
 
@@ -224,13 +240,16 @@ header>.interface {
     justify-content: center;
     align-items: center;
     border: none;
-    box-shadow: 0px 0px 15px #FF0000;
-    background-color: #FF0000;
+    box-shadow: 0px 0px 15px var(--secondary-color);
+    background-color: var(--secondary-color);
     width: 50px;
     height: 50px;
     font-size: 35px;
 }
 
+.corpo.light .btn-scroll button{
+    background-color: var(--secondary-color2);
+}
 
 .checkbox {
     opacity: 0;
@@ -255,11 +274,11 @@ header>.interface {
 }
 
 .corpo.light .label {
-    background-color: #000000;
+    background-color: var(--primary-color2);
 }
 
 .label .ball {
-    background-color: #ff0000;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -268,6 +287,10 @@ header>.interface {
     width: 22px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
+}
+
+.corpo.light .label .ball{
+    background-color: var(--secondary-color2);
 }
 
 .checkbox:checked+.label .ball {
@@ -283,7 +306,7 @@ header>.interface {
 }
 
 #portfolio {
-    border-top: 2px solid red;
+    border-top: 2px solid var(--secondary-color);
     gap: 90px;
     display: flex;
     flex-direction: column;
@@ -292,31 +315,39 @@ header>.interface {
 
 }
 
+.corpo.light #portfolio{
+    border-top: 2px solid var(--secondary-color2);
+}
+
 #portfolio h2 {
     text-align: center;
-    color: #bfbfbf;
+    color: var(--primary-color);
     font-size: 30px;
     font-weight: 400;
 }
 
 .corpo.light #portfolio h2 {
-    color: #000000;
+    color: var(--primary-color2);
 }
 
 #portfolio h2 span {
-    color: #FF0000;
+    color: var(--secondary-color);
+}
+
+.corpo.light #portfolio h2 span {
+    color: var(--secondary-color2);
 }
 
 .projetos {
     display: flex;
     justify-content: center;
-    color: #bfbfbf;
+    color: var(--primary-color);
     flex-wrap: wrap;
     gap: 90px;
 }
 
 .projeto {
-    border: 2px solid #FF0000;
+    border: 2px solid var(--secondary-color);
     text-align: center;
     width: 250px;
     height: 400px;
@@ -339,7 +370,7 @@ header>.interface {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #FF0000;
+    color: var(--secondary-color);
     opacity: 0;
     transition: 0.5s;
 }
@@ -351,7 +382,7 @@ header>.interface {
 
 .overlay:hover {
     opacity: 1;
-    box-shadow: 0px 0px 25px #FF0000;
+    box-shadow: 0px 0px 25px var(--secondary-color);
 }
 
 .projeto:hover {
@@ -362,11 +393,12 @@ header>.interface {
 
 footer {
     padding: 40px 4%;
-    border-top: 2px solid #FF0000;
+    border-top: 2px solid var(--secondary-color);
 }
 
 .corpo.light footer {
-    background-color: #bfbfbf;
+    background-color: var(--primary-color);
+    border-top: 2px solid var(--secondary-color2);
 }
 
 .final {
@@ -374,11 +406,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #bfbfbf;
+    color: var(--primary-color);
 }
 
 .corpo.light .final {
-    color: #000000;
+    color: var(--primary-color2);
 }
 
 @media (max-width: 750px) {
@@ -409,14 +441,18 @@ footer {
 
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: #000000;
+    background-color: var(--primary-color2);
 }
 
 .corpo.light::-webkit-scrollbar {
-    background-color: #bfbfbf;
+    background-color: var(--background-color2);
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background-color: #FF0000;
+    background-color: var(--secondary-color);
+}
+
+.corpo.light::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color2);
 }
