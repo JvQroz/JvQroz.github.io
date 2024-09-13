@@ -50,8 +50,15 @@ header>.interface {
     margin-right: 10px;
 }
 
+.logo h1 span{
+    color: var(--primary-color);
+}
 .corpo.light .logo h1{
     color: var(--secondary-color2);
+}
+
+.corpo.light .logo h1 span{
+    color: var(--primary-color2);
 }
 
 .nav-list {
