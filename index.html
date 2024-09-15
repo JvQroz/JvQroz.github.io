@@ -139,16 +139,17 @@
         <section id="contato">
             <h2>FALE <span>COMIGO</span></h2>
             <div class="conteudo-contato">
-                <form class="form" action="https://formsubmit.co/jvsqueiroz162005@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Digite o seu nome" required maxlength="25">
-                    <input type="email" name="email" placeholder="Digite o seu  endereço de E-mail" required
-                        maxlength="50">
-                    <input type="text" name="assunto" placeholder="Digite o seu assunto" required maxlength="25">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://jvqroz.github.io/obrigado#contato">
-                    <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem"></textarea>
-                    <button type="submit" class="btn-enviar">Enviar</button>
+                <form class="form" id="contact-form">
+                    <input type="text" name="from_name" placeholder="Digite o seu nome" id="from_name" maxlength="25" required>
+                    <input type="email" name="email" placeholder="Digite o seu endereço de E-mail" id="email" maxlength="50" required>
+                    <input type="text" name="assunto" placeholder="Digite o seu assunto" id="assunto" maxlength="25" required>
+                    <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <span id="error-message"></span>
+                    <span id="success-message"></span>
+
+                    <button type="button" onClick="validar(event)" class="btn-enviar">Enviar</button>
                 </form>
+                
                 <div class="fim-contato">
                     <div class="contato-email">
                         <h3>E-mail para contato</h3>
@@ -181,6 +182,7 @@
             <h3>Disponível para trabalhos freelancer</h3>
         </div>
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="/JS/javascript.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>

@@ -607,10 +607,6 @@ header>.interface {
     color: var(--primary-color);
 }
 
-.corpo.light .recebido {
-    color: var(--primary-color2);
-}
-
 .fim-contato{
     display: flex;
     flex-direction: column;
@@ -675,6 +671,23 @@ footer {
 
 .corpo.light .final {
     color: var(--primary-color2);
+}
+
+#error-message {
+    color: var(--secondary-color);
+}
+
+#success-message {
+    color: var(--primary-color);
+}
+
+/* Estilos para o modo claro */
+.corpo.light #error-message {
+    color: var(--secondary-color2); /* Cor para o modo claro */
+}
+
+.corpo.light #success-message {
+    color: var(--primary-color2); /* Cor para o modo claro */
 }
 
 /* RESPONSIVIDADE DA PÁGINA*/
