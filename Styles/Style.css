@@ -541,6 +541,7 @@ header>.interface {
 .corpo.light .form input {
     background-color: var(--background-colo2);
     border-color: var(--secondary-color2);
+    color: var(--primary-color2);
 }
 
 .corpo.light .form input:hover {
