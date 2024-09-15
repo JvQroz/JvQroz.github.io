@@ -1,9 +1,11 @@
 const chk = document.getElementById('chk');
 
+// Função de alternância de modo claro/escuro
 function toggleLightMode() {
     document.body.classList.toggle('light');
 }
 
+// Carrega o tema salvo no localStorage
 function loadTheme() {
     const darkMode = localStorage.getItem('light');
 
@@ -14,6 +16,7 @@ function loadTheme() {
 
 loadTheme();
 
+// Adiciona ou remove o modo claro/escuro e salva no localStorage
 chk.addEventListener('change', () => {
     toggleLightMode();
 

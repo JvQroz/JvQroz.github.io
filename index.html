@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JvQroz - Portfólio</title>
     <link rel="stylesheet" href="Styles/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -78,28 +79,28 @@
             <h2>MINHAS <span>TECNOLOGIAS</span>:</h2>
             <div class="caixas-especialidades">
                 <div class="caixa-especialidades">
-                    <h3 style="color: chocolate;">HTML</h3>
+                    <img src="Image/html-5.png" alt="html" width="50px">
                     <p>HTML, que significa HyperText Markup Language (Linguagem de Marcação de Hipertexto), é a
                         principal linguagem usada para criar e estruturar conteúdos na web.
                         Ele fornece a estrutura básica das páginas da web, definindo elementos como títulos, parágrafos,
                         links, imagens e outros tipos de conteúdo.</p>
                 </div>
                 <div class="caixa-especialidades">
-                    <h3 style="color: dodgerblue;">CSS</h3>
+                    <img src="Image/css-3.png" alt="html" width="50px">
                     <p>CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem usada
                         para descrever a apresentação de um documento escrito em HTML.
                         Enquanto o HTML define a estrutura e o conteúdo de uma página web, o CSS é responsável por sua
                         aparência visual.</p>
                 </div>
                 <div class="caixa-especialidades">
-                    <h3 style="color: yellow">JAVASCRIPT</h3>
+                    <img src="Image/js.png" alt="html" width="50px">
                     <p>JavaScript é uma linguagem de programação essencial para o desenvolvimento web moderno.
                         Ela é usada para adicionar interatividade e funcionalidades dinâmicas às páginas da web.
                         Enquanto HTML fornece a estrutura e o CSS cuida da apresentação, o JavaScript permite que você
                         manipule e interaja com o conteúdo da página de forma dinâmica.</p>
                 </div>
                 <div class="caixa-especialidades">
-                    <h3 style="color: blue">REACT</h3>
+                    <img src="Image/react.png" alt="html" width="50px">
                     <p>React é uma biblioteca JavaScript de código aberto desenvolvida pelo Facebook para criar
                         interfaces de usuário (UIs) interativas e dinâmicas, especialmente para aplicações web de uma
                         única página (Single Page Applications - SPAs).
@@ -137,15 +138,39 @@
         </section>
         <section id="contato">
             <h2>FALE <span>COMIGO</span></h2>
-            <form class="conteudo-contato" action="https://formsubmit.co/jvsqueiroz162005@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Digite o seu nome" required maxlength="25">
-                <input type="email" name="email" placeholder="Digite o seu  endereço de E-mail" required maxlength="50">
-                <input type="text" name="assunto" placeholder="Digite o seu assunto" required maxlength="25">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://jvqroz.github.io/obrigado.html#contato">
-                <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
+            <div class="conteudo-contato">
+                <form class="form" action="https://formsubmit.co/jvsqueiroz162005@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Digite o seu nome" required maxlength="25">
+                    <input type="email" name="email" placeholder="Digite o seu  endereço de E-mail" required
+                        maxlength="50">
+                    <input type="text" name="assunto" placeholder="Digite o seu assunto" required maxlength="25">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="jvqroz.github.io/obrigado.html#contato">
+                    <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+                <div class="fim-contato">
+                    <div class="contato-email">
+                        <h3>E-mail para contato</h3>
+                        <p>jvsqueiroz162005@gmail.com</p>
+                    </div>
+                    <div class="contato-redes">
+                        <h3>Adicione nas redes</h3>
+                        <div class="ctt-rede">
+                            <i class="fa fa-instagram"></i>
+                            <p>@queiroz.jvv</p>
+                        </div>
+                        <div class="ctt-rede">
+                            <i class="fa fa-github"></i>
+                            <p>JvQroz</p>
+                        </div>
+                        <div class="ctt-rede">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>(11) 97566-4322</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="btn-scroll">
             <a href="#navegar"><button>↑</button></a>
