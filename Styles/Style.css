@@ -607,6 +607,10 @@ header>.interface {
     color: var(--primary-color);
 }
 
+.corpo.light .recebido {
+    color: var(--primary-color2);
+}
+
 .fim-contato{
     display: flex;
     flex-direction: column;
