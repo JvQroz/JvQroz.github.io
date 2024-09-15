@@ -14,7 +14,7 @@
     --secondary-color: #ff0000;
     --secondary-color2: #b22222;
     --background-color: #0F0F0F;
-    --background-color2: #bfbfbf;
+    --background-color2: #e0e0e0;
 }
 
 html {
@@ -306,6 +306,8 @@ header>.interface {
 
 .corpo.light .btn-scroll button {
     background-color: var(--secondary-color2);
+    box-shadow: 0px 0px 15px var(--secondary-color2);
+
 }
 
 .checkbox {
@@ -415,6 +417,10 @@ header>.interface {
     position: relative;
 }
 
+.corpo.light .projeto {
+    border-color: var(--secondary-color2);
+}
+
 .overlay {
     background-color: #000000ad;
     position: absolute;
@@ -432,6 +438,11 @@ header>.interface {
     transition: 0.5s;
 }
 
+.corpo.light .overlay {
+    color: var(--secondary-color2);
+}
+
+
 .overlay p {
     color: #bfbfbf;
     font-size: 18px;
@@ -440,6 +451,10 @@ header>.interface {
 .overlay:hover {
     opacity: 1;
     box-shadow: 0px 0px 25px var(--secondary-color);
+}
+
+.corpo.light .overlay:hover {
+    box-shadow: 0px 0px 25px var(--secondary-color2);
 }
 
 .projeto:hover {
@@ -457,6 +472,10 @@ header>.interface {
     gap: 90px;
 }
 
+.corpo.light #contato {
+    border-color: var(--secondary-color2);
+}
+
 #contato h2 {
     text-align: center;
     color: var(--primary-color);
@@ -472,6 +491,10 @@ header>.interface {
     color: var(--primary-color2);
 }
 
+.corpo.light #contato h2 span {
+    color: var(--secondary-color2);
+}
+
 .conteudo-contato {
     padding: 100px 0;
     border: 2px solid var(--secondary-color);
@@ -482,6 +505,10 @@ header>.interface {
     align-items: center;
     flex-direction: column;
     width: 40%;
+}
+
+.corpo.light .conteudo-contato {
+    border-color: var(--secondary-color2);
 }
 
 .conteudo-contato input {
@@ -495,9 +522,21 @@ header>.interface {
     transition: 0.3s;
 }
 
+.corpo.light .conteudo-contato input {
+    background-color: var(--background-color2);
+    color: var(--primary-color2);
+    border-color: var(--secondary-color2);
+}
+
 .conteudo-contato input:hover {
     box-shadow: 0px 0px 10px var(--secondary-color);
 }
+
+.corpo.light .conteudo-contato input:hover {
+    box-shadow: 0px 0px 10px var(--secondary-color2);
+
+}
+
 
 .conteudo-contato textarea {
     border: 2px solid var(--secondary-color);
@@ -512,10 +551,20 @@ header>.interface {
     transition: 0.3s;
 }
 
+.corpo.light .conteudo-contato textarea {
+    background-color: var(--background-color2);
+    color: var(--primary-color2);
+    border-color: var(--secondary-color2);
+}
+
 .conteudo-contato textarea:hover {
     box-shadow: 0px 0px 10px var(--secondary-color);
 }
 
+.corpo.light .conteudo-contato textarea:hover {
+    box-shadow: 0px 0px 10px var(--secondary-color2);
+
+}
 
 .btn-enviar {
     color: var(--primary-color);
@@ -528,16 +577,24 @@ header>.interface {
     cursor: pointer;
 }
 
+.corpo.light .btn-enviar {
+    background-color: var(--secondary-color2);
+    color: var(--primary-color2);
+}
+
 .btn-enviar:hover {
     box-shadow: 0px 0px 10px var(--secondary-color);
     transform: scale(1.10);
 }
 
-.recebido{
-    color: var(--primary-color);
+.btn-enviar:hover {
+    box-shadow: 0px 0px 10px var(--secondary-color2);
+
 }
 
-/* RESPONSIVIDADE DA PÁGINA*/
+.recebido {
+    color: var(--primary-color);
+}
 
 footer {
     padding: 40px 4%;
@@ -545,7 +602,7 @@ footer {
 }
 
 .corpo.light footer {
-    background-color: var(--primary-color);
+    background-color: var(--background-color2);
     border-top: 2px solid var(--secondary-color2);
 }
 
@@ -560,6 +617,8 @@ footer {
 .corpo.light .final {
     color: var(--primary-color2);
 }
+
+/* RESPONSIVIDADE DA PÁGINA*/
 
 @media (max-width: 750px) {
     .nav-list {
