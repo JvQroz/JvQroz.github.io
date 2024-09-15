@@ -529,13 +529,18 @@ header>.interface {
 }
 
 .corpo.light .form {
-    background-color: var(--background-color2);
+    background-color: var(--background-colo2);
     color: var(--primary-color2);
     border-color: var(--secondary-color2);
 }
 
 .form input:hover {
     box-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+.corpo.light .form input {
+    background-color: var(--background-colo2);
+    border-color: var(--secondary-color2);
 }
 
 .corpo.light .form input:hover {
@@ -622,16 +627,27 @@ header>.interface {
     gap: 10px;
 }
 
+.corpo.light .ctt-rede{
+    color: var(--primary-color2);
+}
+
 .fim-contato h3{
     color: var(--secondary-color);
     font-size: 30px;
     font-weight: 400;
 }
 
+.corpo.light .fim-contato h3{
+    color: var(--secondary-color2);
+}
 
 .fim-contato p{
     color: var(--primary-color);
     font-size: 16px;
+}
+
+.corpo.light .fim-contato p{
+    color: var(--primary-color2);
 }
 
 footer {
