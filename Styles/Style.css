@@ -24,7 +24,6 @@ html {
 /*   MENU DE NAVEGAÇÃO   */
 header {
     padding: 40px 4%;
-    border-bottom: 2px solid var(--secondary-color);
 }
 
 .interface {
@@ -38,10 +37,6 @@ header>.interface {
     align-items: center;
     justify-content: space-between;
 
-}
-
-.corpo.light header {
-    border-bottom: 2px solid var(--secondary-color2);
 }
 
 .logo h1 {
@@ -99,13 +94,13 @@ header>.interface {
 }
 
 #inicio {
+    border-top: 2px solid var(--secondary-color);
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid var(--secondary-color);
 }
 
-.corpo.light #inicio {
-    border-bottom: 2px solid var(--secondary-color2);
+.corpo.light #inicio{
+    border-top: 2px solid var(--secondary-color2);
 }
 
 .conteudo-inicio {
@@ -211,11 +206,17 @@ header>.interface {
 }
 
 #tecnologias {
+    border-top: 2px solid var(--secondary-color);
     gap: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0px;
+}
+
+.corpo.light #tecnologias {
+    border-top: 2px solid var(--secondary-color2);
+
 }
 
 #tecnologias h2 {
