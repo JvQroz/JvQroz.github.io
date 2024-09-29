@@ -76,3 +76,26 @@ function validar(event) {
             });
     }
 }
+
+var mgCookies = document.getElementById('cookies-msg');
+
+function aceito() {
+  localStorage.lgpd = "sim";
+  mgCookies.classList.remove('mostrar');
+  mgCookies.classList.add('esconder'); 
+
+  setTimeout(function() {
+    mgCookies.style.visibility = 'hidden';
+  }, 500);
+}
+
+
+if (localStorage.lgpd === 'sim') {
+  mgCookies.classList.remove('mostrar');
+} else {
+
+  setTimeout(function() {
+    mgCookies.classList.add('mostrar');
+    mgCookies.style.visibility = 'visible';
+  }, 100);
+}

@@ -140,16 +140,20 @@
             <h2>FALE <span>COMIGO</span></h2>
             <div class="conteudo-contato">
                 <form class="form" id="contact-form">
-                    <input type="text" name="from_name" placeholder="Digite o seu nome" id="from_name" maxlength="25" required>
-                    <input type="email" name="email" placeholder="Digite o seu endereço de E-mail" id="email" maxlength="50" required>
-                    <input type="text" name="assunto" placeholder="Digite o seu assunto" id="assunto" maxlength="25" required>
-                    <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <input type="text" name="from_name" placeholder="Digite o seu nome" id="from_name" maxlength="25"
+                        required>
+                    <input type="email" name="email" placeholder="Digite o seu endereço de E-mail" id="email"
+                        maxlength="50" required>
+                    <input type="text" name="assunto" placeholder="Digite o seu assunto" id="assunto" maxlength="25"
+                        required>
+                    <textarea name="message" id="msg" cols="25" rows="10" placeholder="Digite sua mensagem"
+                        required></textarea>
                     <span id="error-message"></span>
                     <span id="success-message"></span>
 
                     <button type="button" onClick="validar(event)" class="btn-enviar">Enviar</button>
                 </form>
-                
+
                 <div class="fim-contato">
                     <div class="contato-email">
                         <h3>E-mail para contato</h3>
@@ -198,6 +202,20 @@
             <p>Desenvolvido com <span style="color: red;">❤️</span> por JvDev</p>
         </div>
     </footer>
+
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>
+                Com o objetivo de aprimorar sua experiência em meu site, é utilizado cookies e tecnologias semelhantes.
+                Para prosseguir e concordar os termos, clique em “Aceito”.
+                Para mais informações sobre o tratamento de dados pessoais dos usuários, leia nossa <a href="">Política de Privacidade.</a>
+            </p>
+            <div class="cookies-btn">
+                <button onClick="aceito()">Aceito</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="/JS/javascript.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
