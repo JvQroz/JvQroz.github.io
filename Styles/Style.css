@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
 
 * {
     margin: 0;
@@ -72,8 +69,8 @@ header>.interface {
     color: var(--primary-color);
     padding-block: 10px;
     display: inline-block;
-    position: relative; 
-    text-decoration: none; 
+    position: relative;
+    text-decoration: none;
     transition: color .2s;
 }
 
@@ -83,10 +80,10 @@ header>.interface {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; 
+    height: 2px;
     background-color: var(--primary-color);
     transform: scaleX(0);
-    transform-origin: left; 
+    transform-origin: left;
     transition: transform .3s ease-out;
 }
 
@@ -96,14 +93,14 @@ header>.interface {
 
 .nav-list a:hover::after {
     background-color: var(--secondary-color);
-    transform: scaleX(1); 
+    transform: scaleX(1);
     box-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
 
 }
 
-.corpo.light .nav-list a:hover::after{
+.corpo.light .nav-list a:hover::after {
     background-color: var(--secondary-color2);
-    box-shadow: 0 0 8px var(--secondary-color2), 0 0 12px var(--secondary-color2); 
+    box-shadow: 0 0 8px var(--secondary-color2), 0 0 12px var(--secondary-color2);
 }
 
 .corpo.light .nav-list a {
@@ -128,7 +125,7 @@ header>.interface {
     justify-content: center;
 }
 
-.corpo.light #inicio{
+.corpo.light #inicio {
     border-top: 2px solid var(--secondary-color2);
 }
 
@@ -515,14 +512,14 @@ header>.interface {
     color: var(--secondary-color2);
 }
 
-.conteudo-contato{
+.conteudo-contato {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.form{
+.form {
     padding: 40px 0;
     border: 2px solid var(--secondary-color);
     border-radius: 30px;
@@ -628,13 +625,13 @@ header>.interface {
     color: var(--primary-color);
 }
 
-.fim-contato{
+.fim-contato {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.contato-email{
+.contato-email {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -649,26 +646,26 @@ header>.interface {
     gap: 10px;
 }
 
-.corpo.light .ctt-rede{
+.corpo.light .ctt-rede {
     color: var(--primary-color2);
 }
 
-.fim-contato h3{
+.fim-contato h3 {
     color: var(--secondary-color);
     font-size: 30px;
     font-weight: 400;
 }
 
-.corpo.light .fim-contato h3{
+.corpo.light .fim-contato h3 {
     color: var(--secondary-color2);
 }
 
-.fim-contato p{
+.fim-contato p {
     color: var(--primary-color);
     font-size: 16px;
 }
 
-.corpo.light .fim-contato p{
+.corpo.light .fim-contato p {
     color: var(--primary-color2);
 }
 
@@ -690,25 +687,25 @@ footer {
 }
 
 .final {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .nav-list-fim ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 15px 0; 
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
 }
 
 .nav-list-fim ul li {
     display: inline;
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 .nav-list-fim a {
-    color: var(--primary-color); 
-    text-decoration: none; 
+    color: var(--primary-color);
+    text-decoration: none;
     transition: color 0.3s;
     font-weight: bold;
 
@@ -718,11 +715,11 @@ footer {
     color: var(--secondary-color);
 }
 
-.corpo.light .nav-list-fim a{
+.corpo.light .nav-list-fim a {
     color: var(--primary-color2);
 }
 
-.corpo.light .nav-list-fim a:hover{
+.corpo.light .nav-list-fim a:hover {
     color: var(--secondary-color2);
 }
 
@@ -732,21 +729,21 @@ footer {
 
 .social-media a {
     color: var(--primary-color);
-    margin: 0 10px; 
-    text-decoration: none; 
-    transition: color 0.3s; 
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
 }
 
-.corpo.light .social-media a{
+.corpo.light .social-media a {
     text-decoration: underline;
     color: var(--primary-color2);
 }
 
-.corpo.light .social-media a:hover{
+.corpo.light .social-media a:hover {
     color: var(--secondary-color2);
 }
 
@@ -758,17 +755,17 @@ footer p {
     margin: 10px 0;
 }
 
-footer p a{
+footer p a {
     color: var(--secondary-color);
 
 }
 
-footer p a:hover{
+footer p a:hover {
     text-decoration: underline;
 }
 
-.corpo.light footer p a{
-    color: var(--secondary-color2); 
+.corpo.light footer p a {
+    color: var(--secondary-color2);
 }
 
 .corpo.light .final {
@@ -784,7 +781,7 @@ footer p a:hover{
 }
 
 .corpo.light #error-message {
-    color: var(--secondary-color2); 
+    color: var(--secondary-color2);
 }
 
 .corpo.light #success-message {
@@ -794,12 +791,12 @@ footer p a:hover{
 .cookies-msg {
     border: solid 1px var(--background-color2);
     position: fixed;
-    bottom: 5%; 
+    bottom: 5%;
     left: 20%;
     width: 35%;
-    transform: translateX(-150%) translateY(-5%); 
+    transform: translateX(-150%) translateY(-5%);
     opacity: 0;
-    background-color: var(--background-color); 
+    background-color: var(--background-color);
     color: var(--primary-color);
     border-radius: 5px;
     z-index: 1000;
@@ -814,46 +811,46 @@ footer p a:hover{
 
 #cookies-msg.esconder {
     opacity: 0;
-    transform: translateX(-150%) translateY(-5%); 
+    transform: translateX(-150%) translateY(-5%);
 }
 
 
-  .corpo.light .cookies-msg{
+.corpo.light .cookies-msg {
     background-color: var(--background-color2);
     border-color: var(--primary-color2);
     color: var(--primary-color2);
-  }
+}
 
-  .cookies-msg.mostrar{
+.cookies-msg.mostrar {
     display: block;
-  }
+}
 
-  .cookies-txt{
+.cookies-txt {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 30px;
     flex-direction: column;
     font-size: 14px;
-  }
+}
 
-  .cookies-txt a{
+.cookies-txt a {
     color: var(--secondary-color);
-  }
+}
 
-  .cookies-txt a:hover{
+.cookies-txt a:hover {
     text-decoration: underline;
-  }
+}
 
-  .corpo.light .cookies-txt a{
+.corpo.light .cookies-txt a {
     color: var(--secondary-color2)
-  }
+}
 
-  .cookies-btn{
+.cookies-btn {
     margin-top: 1rem;
-  }
+}
 
-  .cookies-msg button{
+.cookies-msg button {
     background-color: var(--secondary-color);
     border-radius: 8px;
     color: var(--primary-color);
@@ -862,34 +859,44 @@ footer p a:hover{
     padding: 10px 40px;
     cursor: pointer;
     transition: .3s;
-  }
-  
-  .cookies-msg button:hover{
+}
+
+.cookies-msg button:hover {
     box-shadow: 0px 0px 10px var(--secondary-color);
     transform: scale(1.10);
-  }
+}
 
-  .corpo.light .cookies-msg button{
+.corpo.light .cookies-msg button {
     background-color: var(--secondary-color2);
     color: var(--primary-color2);
-  }
-  .corpo.light .cookies-msg button:hover{
+}
+
+.corpo.light .cookies-msg button:hover {
     box-shadow: 0px 0px 10px var(--secondary-color2);
-  }
+}
 
 /* RESPONSIVIDADE DA PÁGINA*/
 @media (max-width: 750px) {
-    .cookies-msg{
-        width: 80%;
+    .cookies-msg {
+        width: 90%;
+        bottom: -20px;
         left: 50%;
-    
+        transform: translateX(-50%) translateY(100%);
+    }
+
+    #cookies-msg.mostrar {
+        transform: translateX(-50%) translateY(-20%);
+    }
+
+    #cookies-msg.esconder {
+        transform: translateX(-50%) translateY(100%);
     }
 
     .nav-list {
         display: none;
     }
 
-    .conteudo-contato{
+    .conteudo-contato {
         flex-direction: column;
         align-items: center;
     }
