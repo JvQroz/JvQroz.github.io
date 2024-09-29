@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -29,12 +29,14 @@ header {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+
 }
 
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo h1 {
@@ -155,7 +157,8 @@ header>.interface {
     width: 0;
     border-right: 16px solid var(--secondary-color);
     font-size: 45px;
-    font-weight: 100;
+    font-weight: 500;
+
 }
 
 @keyframes mark {
@@ -181,15 +184,6 @@ header>.interface {
         width: 0;
     }
 }
-
-/* Estilo para o item ativo do menu */
-.nav-list li a.active {
-    color: #ff6600;
-    /* Cor destacada para o link ativo */
-    font-weight: bold;
-    /* Opcional para destaque */
-}
-
 
 .inicio-txt h1 span {
     color: var(--secondary-color);
@@ -301,9 +295,9 @@ header>.interface {
 .caixa-especialidades p {
     display: flex;
     margin: 20px;
-    text-align: center;
+    text-align: start;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
