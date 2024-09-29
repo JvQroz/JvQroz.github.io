@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 
 * {
     margin: 0;
@@ -15,6 +18,7 @@
     --secondary-color2: #b22222;
     --background-color: #0F0F0F;
     --background-color2: #e0e0e0;
+    --color-link: #1a0dab;
 }
 
 html {
@@ -678,11 +682,92 @@ footer {
     border-top: 2px solid var(--secondary-color2);
 }
 
-.final {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer {
+    background-color: var(--background-color);
     color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.final {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.nav-list-fim ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 15px 0; 
+}
+
+.nav-list-fim ul li {
+    display: inline;
+    margin: 0 15px; 
+}
+
+.nav-list-fim a {
+    color: var(--primary-color); 
+    text-decoration: none; 
+    transition: color 0.3s;
+    font-weight: bold;
+
+}
+
+.nav-list-fim a:hover {
+    color: var(--secondary-color);
+}
+
+.corpo.light .nav-list-fim a{
+    color: var(--primary-color2);
+}
+
+.corpo.light .nav-list-fim a:hover{
+    color: var(--secondary-color2);
+}
+
+.social-media {
+    margin: 15px 0;
+}
+
+.social-media a {
+    color: var(--primary-color);
+    margin: 0 10px; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.social-media a:hover {
+    color: var(--secondary-color); 
+}
+
+.corpo.light .social-media a{
+    text-decoration: underline;
+    color: var(--primary-color2);
+}
+
+.corpo.light .social-media a:hover{
+    color: var(--secondary-color2);
+}
+
+.heart {
+    color: var(--secondary-color);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer p a{
+    color: var(--secondary-color);
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+.corpo.light footer p a{
+    color: var(--secondary-color2); 
 }
 
 .corpo.light .final {
@@ -697,13 +782,12 @@ footer {
     color: var(--primary-color);
 }
 
-/* Estilos para o modo claro */
 .corpo.light #error-message {
-    color: var(--secondary-color2); /* Cor para o modo claro */
+    color: var(--secondary-color2); 
 }
 
 .corpo.light #success-message {
-    color: var(--primary-color2); /* Cor para o modo claro */
+    color: var(--primary-color2);
 }
 
 /* RESPONSIVIDADE DA PÁGINA*/

@@ -1,6 +1,6 @@
-// Inicialize o EmailJS
+// Inicialização EmailJS
 (function(){
-    emailjs.init("LZcrkAwucARaxIWel"); // Substitua pelo seu User ID
+    emailjs.init("LZcrkAwucARaxIWel");
 })();
 
 const chk = document.getElementById('chk');
@@ -28,6 +28,7 @@ chk.addEventListener('change', () => {
     }
 });
 
+//validação de email
 function validar(event) {
     event.preventDefault();
 
